@@ -1,0 +1,80 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&subset=korean');
+
+.container1 {
+	margin: auto;
+	width: 960px;
+}
+
+#info {
+	text-align: center;
+	margin-top: 100px;
+}
+
+h1 {
+	float: left;
+}
+nav {
+	width: 100%;
+	height: 70px;
+	display: inline;
+}
+
+header {
+    height: 600px;
+    width: 100%;
+    background-image: url('forturn cookies.jpg');
+    background-size: cover;
+}
+
+section {
+	display: inline-block;
+	width: 100%;
+	margin: auto;
+	padding: 50px 0;
+	content: center;
+}
+
+footer {
+	width: 100%;
+	height: 70px;
+	background-color: black;
+	margin-top: 50px;
+	padding: 20px;
+	text-align: center;
+	font-size: 15px;
+	color: white;
+	position: static;
+}
+
+header h2 {
+	font-size: 60px;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-weight: bold;
+	padding-top: 70px;
+	margin-bottom: 30px;
+}
+
+header p {
+	font-size: 30px;
+	margin: 30px;
+	text-align: center;
+	word-break: break-all;
+	font-family: 'Nanum Pen Script', cursive;
+	font-weight: bold;
+}

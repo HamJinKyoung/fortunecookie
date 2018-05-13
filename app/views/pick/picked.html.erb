@@ -1,0 +1,27 @@
+<header>
+    <div class="container1" id="info">
+        <h2>포춘쿠키 결과는~?</h2>
+        <p>당신의 포춘쿠키 결과는 어떤가요?</p>
+    </div>
+</header>
+
+<section>
+    <div class="container1">
+        <% if @random == [1] %>
+            <img src="/assets/forturn cookie_result1.png">
+            <p>오늘은 잠시 멈춰서서 요즘의 나를 뒤돌아보는 시간이 필요한 날입니다.</p>
+        <% elsif @random == [2] %>
+            <img src="/assets/forturn cookie_result2.png">
+            <p>실수는 한번으로 충분합니다. 다시 일어나지 않도록 주의하세요.</p>
+        <% elsif @random == [3] %>
+            <img src="/assets/forturn cookie_result3.png">
+            <p>하루에 한번만 더 웃어보세요. 당신의 꿈에 힘이 되어 줄 것입니다.</p>
+        <% else %>
+            <img src="/assets/forturn cookie_result4.png">
+            <p>무슨 말을 원하는 건가요?</p>
+        <% end %>
+
+        <a href="/pick/picked" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">다시뽑기!</a>
+
+    </div>
+</section>
